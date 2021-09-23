@@ -1,39 +1,35 @@
-void setup()
-{
-  size(500,500);
+int startX = 200;
+int startY = 300;
+int endX = 0;
+int endY = 150;
+
+void setup() {
+  size(500, 500);
+  background(230,230,230);
+  strokeWeight(4);
 }
 
-int startX = 0;
-int startY = 150;
-int endX = 0;
-int endY = 0;
-
-void draw()
-{
-  background(128, 138, 145);
+void draw() {
   stroke(103,192,92);
-  
-  while(startX >= 500){
-   startX = startX + (int)(Math.random() * 11);
-   startY = startX + (int)(Math.random() * 11) - 11;
-   endX = endX + (int)(Math.random() * 11);
-   endY = endX + (int)(Math.random() * 11) - 11;
-   line(startX, startY, endX, endY);
+  while (startX < 500) {
+    endX = startX + (int)(Math.random()*25)-10;
+    endY = startY + (int)(Math.random()*10)-9;
+    line(startX, startY, endX, endY);
+    startX = endX;
+    startY = endY;
   }
-  
-  /*
-  noStroke();
+ noStroke();
   
   //wand
   fill(135, 100, 39);
-  triangle(250,300, 310,425, 325,425);
+  triangle(200,300, 147,425, 160,425);
   
   //VOLDERMORT 
   fill(3,77,88);
-  triangle(375,355, 300,475, 400,475);
+  triangle(100,355, 75,475, 175,475);
   
   fill(194,193,196);
-  circle(375,355,125);
+  circle(100,355,125);
   //make gradient
   
   //eyes
@@ -42,13 +38,19 @@ void draw()
   //circle();
   
   //nose: \/
+  line();
+  line();
+  
   //mouth??
   
   //wand colors: 103,192,92; outline:206,247,176
-  */
 }
 
-void mousePressed(){
-   
-}
+void mousePressed() {
+  startX = 200;
+  startY = 300;
+  endX = 0;
+  endY = 150;
 
+  redraw();
+}
