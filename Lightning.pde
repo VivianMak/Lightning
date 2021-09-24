@@ -6,7 +6,7 @@ int endY = 150;
 void setup() {
   size(500, 500);
   background(230,230,230);
-  strokeWeight(4);
+  strokeWeight((int)(Math.random()*10));
 }
 
 void draw() {
