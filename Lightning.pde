@@ -39,8 +39,8 @@ void draw() {
   strokeWeight(4);
   //eyes
   fill(50,46,57);
-  circle(90, 370, 13);
-  circle(115, 370, 13);
+  ellipse(90, 370, 13,13);
+  ellipse(115, 370, 13,13);
   //eyebrows: \/
   line(80,345,95,355);
   line(125,345,110,355);
