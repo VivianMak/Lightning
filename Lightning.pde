@@ -30,7 +30,7 @@ void draw() {
   
   noStroke();
   //VOLDERMORT 
-  fill(38, 139, 153);
+  fill(92,117,127);
   triangle(100,355, 75,475, 175,475);
   fill(194,193,196);
   ellipse(100,355,110,120);
