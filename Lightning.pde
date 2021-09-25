@@ -35,7 +35,7 @@ void draw() {
   fill(194,193,196);
   ellipse(100,355,110,120);
   
-  stroke(0,0,0,90);
+  stroke(0,0,0);
   strokeWeight(4);
   //eyes
   fill(50,46,57);
