@@ -4,7 +4,7 @@ int endX = 0;
 int endY = 150;
 
 void setup() {
-  size(700, 700);
+  size(600, 600);
 }
 
 void draw() {
